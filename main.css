@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+section h2, 
+section h3,
+form button {
+    font-family: 'Bungee', cursive;
+    font-weight: normal; /*editar a grossura das fontes*/
+}
+
+body, input, textarea { /*trocar a fonte de todo o site*/
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #182c61;
+    color: #ecf0f1;
+}
+
+header nav li { /*links do menu*/
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a { /*para alterar um link diretamente precisa do a*/
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1280px; 
+    width: 100%;  /*deixa o conteudo centralizado*/
+    margin: 0 auto;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*deixar igualmente espaçados, um em cada canto*/
+}
+
+.brands-lists img {
+    height: 24px; /* limitar o tamanho das imagens*/
+}
+
+.brands-lists li {
+    display: inline;
+    margin-right: 8px;
+}
+
+section .container { /*para sobreescrever o align intems anterior*/
+    align-items: flex-start;
+}
+
+section { /*espaçamento em todo o section*/
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 16px; /*espaçamento pro titulo h2*/
+}
+
+section {
+    color:  #182c61; /*tudo que tiver dentro da section vai ter essa cor*/
+}
+
+section p { /*espaçamento pros parágrafos*/
+    margin-bottom: 8px;
+}
+
+.store-front { /*para editar so a imagem que tem essa classe*/
+    margin-right: 32px;
+}
+
+.social-links img { /*editar o tamanho das imagens dos links*/
+    height: 24px;
+}
+
+.social-links li {
+    display: inline; /*para ficarem alinhados*/
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none; /*tirar o underline das imagens*/
+}
+
+#contact .container { /*para que essa section fique difente das outras colocamos um id*/
+    display: block;
+}
+
+.contact-methods { /*para editar só a parte dos contatos*/
+    display: flex;
+    justify-content: space-between;
+}
+
+form input, /*editar os diferentes forms*/
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea { 
+    resize: none; /*para que o texarea nao possa ser redimensionado*/
+    height: 180px;
+}
+
+section h3 {
+    margin-bottom: 16px; /*margem embaixo para o titulos h3*/
+}
+
+form button { /*estilizando o botao*/
+    background-color: #182c61;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer; /*para o cursor mudar quando passa no botao*/
+}
+
+form button:hover { /*botao muda quando o mouse passa*/
+    background-color: #2b4ba3;
+    transition: 0.3s; /*transicao suave*/
+    
+}
+
+input:focus, textarea:focus {
+    outline-color:#182c61 ; /*mudar a cor da ''borda'' quando passa o cursor*/
+}
+
+footer {
+    background-color: #182c61;
+    color: #ecf0f1;
+    padding: 16px 0;
+}
+
+#contact {
+    background-color: #ecf0f1;
+}
