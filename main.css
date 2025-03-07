@@ -7,9 +7,10 @@
 header,
 section h2, 
 section h3,
+section h4
 form button {
-    font-family: 'Bungee', cursive;
-    font-weight: normal; /*editar a grossura das fontes*/
+    font-family: "Bungee", sans-serif;
+    font-weight: normal;
 }
 
 body, input, textarea { /*trocar a fonte de todo o site*/
@@ -18,8 +19,8 @@ body, input, textarea { /*trocar a fonte de todo o site*/
 
 header {
     padding: 16px 0;
-    background-color: #182c61;
-    color: #ecf0f1;
+    background-image: linear-gradient(0deg, #000 0%, #1d2e56 100%);
+    color: #4d6f94;
 }
 
 header nav li { /*links do menu*/
@@ -29,7 +30,7 @@ header nav li { /*links do menu*/
 }
 
 header nav li a { /*para alterar um link diretamente precisa do a*/
-    color: #ecf0f1;
+    color: #4d6f94;
     text-decoration: none;
 }
 
@@ -46,15 +47,6 @@ section .container {
     justify-content: space-between; /*deixar igualmente espaçados, um em cada canto*/
 }
 
-.brands-lists img {
-    height: 24px; /* limitar o tamanho das imagens*/
-}
-
-.brands-lists li {
-    display: inline;
-    margin-right: 8px;
-}
-
 section .container { /*para sobreescrever o align intems anterior*/
     align-items: flex-start;
 }
@@ -63,20 +55,67 @@ section { /*espaçamento em todo o section*/
     padding: 24px 0;
 }
 
-section h2 {
+section h2,
+section h3,
+section h4 {
     margin-bottom: 16px; /*espaçamento pro titulo h2*/
 }
 
+section h4 {
+    font-size: 18px; 
+    margin: 16px 0;
+}
+
 section {
-    color:  #182c61; /*tudo que tiver dentro da section vai ter essa cor*/
+    color:  #abc2c5; /*tudo que tiver dentro da section vai ter essa cor*/
+    background-color: #000;
 }
 
 section p { /*espaçamento pros parágrafos*/
     margin-bottom: 8px;
 }
 
-.store-front { /*para editar so a imagem que tem essa classe*/
+.logo img {
+    height: 60px;
+}
+
+.logo {
+    display: flex; /*para a logo ficar do lado do texto*/
+    align-items: center; /*para alinha a logo com o texto*/
+}
+
+.map { /*para editar so a imagem que tem essa classe*/
     margin-right: 32px;
+    height: 320px;
+}
+
+.characters-list {
+    display: flex;
+}
+
+.characters-list li {
+    margin-right: 8px;
+    display: inline;
+}
+
+.characters-list img { 
+    height: 180px;
+    margin-top: 16px;
+    background-image: linear-gradient(0deg, #1d2e65 0%, #000 50%);
+}
+
+ul li {
+    display: flex;
+    padding: 24px 24px;
+}
+
+.sword-skills h3,
+.spell-skills h3 {
+    margin-top: 64px;
+}
+
+#skills img {
+    width: 25%;
 }
 
 .social-links img { /*editar o tamanho das imagens dos links*/
@@ -85,7 +124,6 @@ section p { /*espaçamento pros parágrafos*/
 
 .social-links li {
     display: inline; /*para ficarem alinhados*/
-    margin-right: 8px;
 }
 
 .social-links li a {
@@ -115,33 +153,33 @@ form textarea {
     height: 180px;
 }
 
-section h3 {
-    margin-bottom: 16px; /*margem embaixo para o titulos h3*/
-}
-
 form button { /*estilizando o botao*/
-    background-color: #182c61;
-    color: #ecf0f1;
+    background-color: #1d2e65;
+    color: #abc2c5;
     border: none;
     cursor: pointer; /*para o cursor mudar quando passa no botao*/
 }
 
 form button:hover { /*botao muda quando o mouse passa*/
-    background-color: #2b4ba3;
+    background-color: #abc2c5;
+    color: #1d2e65;
     transition: 0.3s; /*transicao suave*/
-    
 }
 
 input:focus, textarea:focus {
-    outline-color:#182c61 ; /*mudar a cor da ''borda'' quando passa o cursor*/
+    outline-color:#1d2e65 ; /*mudar a cor da ''borda'' quando passa o cursor*/
 }
 
 footer {
-    background-color: #182c61;
-    color: #ecf0f1;
+    background-color: #000;
+    color: #abc2c5;
     padding: 16px 0;
 }
 
 #contact {
-    background-color: #ecf0f1;
+    background-color:#362e42;
+}
+
+.social-links li {
+    padding: 0px 24px 0px 0px;
 }
